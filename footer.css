@@ -1,0 +1,16 @@
+*{
+	margin:0;
+	padding:0;
+}
+footer{
+	width:100%;
+	box-sizing: border-box;
+	color:goldenrod;
+	background-color: mistyrose;
+	padding-top: 10px;
+	padding-bottom:10px;
+    padding-left:10px;
+	padding-right:0;
+	font-size: 17px;
+	font-weight: bold;
+}

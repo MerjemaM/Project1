@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+header{
+	background-color: mistyrose;
+	 z-index:1; /* da header ide preko slika */
+	
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.icon{
+	float:left;
+	padding:15px;
+	padding-top:10px;
+	padding-left:10px;
+}
+.icon div {
+    width: 38px;
+    height: 6px;
+    background-color: goldenrod;
+    margin: 6px 0;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* White fallback color */
+    background-color: rgba(255,255,255, 0.9); /* White w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%; /* 10% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgoldenrod;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: goldenrod;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+#back
+{
+  width: 100%;
+  position: absolute;
+    top: 35px;
+    left 0px;
+    z-index: -1;
+    height: 100%;
+    
+}
+div.quote{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-80px);
+    color:white;
+    font-family:"Helvetica", sans-serif;
+}
+p.one{
+    font-size: 60px;
+}
+p.two{
+    font-size: 40px;
+}
+@media screen and (max-width: 500px) {
+  .overlay {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .overlay a {float: left;}
+  div.content {margin-left: 0;}
+}

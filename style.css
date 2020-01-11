@@ -1,0 +1,211 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+header{
+	background-color: mistyrose;
+	 z-index:1; /* da header ide preko slika */
+	
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.icon{
+	float:left;
+	padding:15px;
+	padding-top:10px;
+	padding-left:10px;
+
+}
+.icon div {
+    width: 38px;
+    height: 6px;
+    background-color: goldenrod;
+    margin: 6px 0;
+    
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* White fallback color */
+    background-color: rgba(255,255,255, 0.9); /* White w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%; /* 10% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgoldenrod;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: goldenrod;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+body{
+    background-image: url(pozadina.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+p {
+    text-align: center;
+    padding-top: 75px;
+    font-size: 50px;
+    font-family: "Helvetica", sans-serif;
+    color: goldenrod;
+   
+}
+@media screen and (max-width: 500px) {
+  .overlay {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .overlay a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+.card1{
+    width: 300px;
+    height: 350px;
+    margin-left: 8%;
+    margin-top: 30px;
+    border: 5px solid goldenrod;
+    display: inline-block;
+    
+}
+.card2{
+ width: 300px;
+    height: 350px;
+    margin-left: 8%;
+    margin-top: 30px;
+    border: 5px solid goldenrod;
+    display: inline-block;
+     
+}
+.card3{
+     width: 300px;
+    height: 350px;
+    margin-left: 8%;
+    margin-top: 30px;
+    border: 5px solid goldenrod;
+    display: inline-block;
+}
+.card4{
+  width: 300px;
+    height: 350px;
+    margin-left: 18%;
+    margin-top: 150px;
+    border: 5px solid goldenrod;
+    display: inline-block;
+     
+}
+.card5{
+    width: 300px;
+    height: 350px;
+    margin-left: 18%;
+    margin-top: 150px;
+    border: 5px solid goldenrod;
+    display: inline-block;
+    
+     
+}
+
+.text1{
+  color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  width: 280px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 8%;
+  border: 5px solid goldenrod;
+  margin-top:2px;
+    background-color: papayawhip;
+ 
+}
+div.text2{
+      color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  width: 280px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 530px;
+  border: 5px solid goldenrod;
+  margin-top:2px;
+ background-color: papayawhip;
+ 
+}
+div.text3{
+  color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  width: 280px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 950px;
+  border: 5px solid goldenrod;
+  margin-top:2px;
+   background-color: papayawhip;
+ 
+}
+div.text4{
+       color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  width: 280px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 18%;
+  border: 5px solid goldenrod;
+  margin-top:2px;
+    margin-bottom: 15px;
+  background-color: papayawhip;
+ 
+}
+div.text5{
+  color: goldenrod;
+  font-size: 20px;
+  position: absolute;
+  width: 280px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 800px;
+  border: 5px solid goldenrod;
+  margin-top:2px;
+    margin-bottom: 15px;
+    background-color: papayawhip;
+ 
+}
